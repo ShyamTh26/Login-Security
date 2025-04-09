@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="Register.js"></script>
+	<link rel="shortcut icon" type="v-icon" href="V.jpeg" >
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="pet-container">
+            <span class="pet cat active">😺</span>
+            <span class="pet dog ">🐶</span>
+        </div>
+        <h2>Welcome!!</h2>
+        
+        <p class="message"></p>
+        
+        <form id="createac">
+        	<div class="input-group">
+        		<p class="ptag">Full Name</p>
+                <input type="text" id="username" name="username" placeholder="User Name" required>    
+            </div>
+            <div class="input-group">
+            	<p class="ptag">Email Id</p>
+                <input type="emailid" id="emailid" name="emailid" placeholder="Email Id" required>
+                <p class="ptag" id="msg"></p>
+            </div>
+            
+            <div class="input-group">
+            	<p class="ptag">Password</p>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            	<p class="ptag" id="msgid"></p>
+            </div>
+            <div class="input-group">
+            	<p class="ptag">Confirm Password</p>
+                <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required>
+            	<p class="ptag" id="pswid"></p>
+            </div>
+            <button type="submit" onClick="CreateAccount()">Sign Up</button>
+        </form>
+		<p>Scan the QR code for google auth registration </p>
+		<img id="qrcode"/>
+        <p>Already have account ??: <a href="/login" class="button-class">Login</a></p>
+        <p>Home Page Redirection Click : <a href="/" class="button-class">Home</a></p>
+    </div>
+</body>
+</html>
